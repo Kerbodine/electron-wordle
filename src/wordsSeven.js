@@ -1,0 +1,17 @@
+export const wordsSeven = [
+  "ability",
+  "absence",
+  "academy",
+  "account",
+  "accused",
+  "achieve",
+  "acquire",
+  "address",
+  "advance",
+  "adverse",
+  "advised",
+  "adviser",
+  "against",
+  "airline",
+  "airport",
+];

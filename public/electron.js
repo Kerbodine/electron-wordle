@@ -5,14 +5,19 @@ const isDev = require("electron-is-dev");
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    minWidth: 360,
-    minHeight: 480,
+    width: 320,
+    height: 640,
+    minWidth: 320,
+    minHeight: 640,
+    maxWidth: 320,
+    maxHeight: 640,
     frame: false,
     titleBarStyle: "hidden",
     fullscreenable: false,
     trafficLightPosition: { x: 19, y: 18 },
+    fullscreenable: false,
+    fullscreen: false,
+    maximizable: false,
     webPreferences: {
       nodeIntegration: true,
     },

@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.draggable {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+.top-btn {
+  @apply flex h-full w-full items-center justify-center rounded-md bg-gray-200 font-bold hover:bg-gray-300;
+}
