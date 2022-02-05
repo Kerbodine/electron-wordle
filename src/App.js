@@ -29,14 +29,16 @@ function App() {
   }, [gameMode]);
 
   return (
-    <WordleFive
-      key={gameMode}
-      guessWord={guessWord}
-      allWords={allWords}
-      gameMode={gameMode}
-      setGameMode={setGameMode}
-      randomGuessWord={randomGuessWord}
-    />
+    <div className="grid h-screen w-screen place-items-center bg-slate-400">
+      <WordleFive
+        key={gameMode}
+        guessWord={guessWord}
+        allWords={allWords}
+        gameMode={gameMode}
+        setGameMode={setGameMode}
+        randomGuessWord={randomGuessWord}
+      />
+    </div>
   );
 }
 

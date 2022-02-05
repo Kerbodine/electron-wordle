@@ -18,6 +18,7 @@
   "homepage": "./",
   "main": "./public/electron.js",
   "scripts": {
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "dev": "concurrently -k \"BROWSER=none npm start\" \"npm:electron\"",
     "electron": "wait-on tcp:3000 && electron .",

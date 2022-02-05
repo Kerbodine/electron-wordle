@@ -20,7 +20,7 @@ export default function WordleFive({
     return arr;
   };
 
-  // console.log(guessWord);
+  console.log(guessWord);
 
   const [grid, setGrid] = useState(generateGrid());
 
@@ -139,7 +139,7 @@ export default function WordleFive({
   };
 
   return (
-    <div className="draggable h-screen w-screen overflow-hidden bg-white pt-[52px]">
+    <div className="draggable w-full max-w-[360px] overflow-hidden rounded-2xl bg-white pt-[52px] shadow-xl">
       <div className="no-drag box-border h-full w-full border-t-[2px] border-gray-200 p-6">
         <div className="-mx-1 mb-4 flex h-10 gap-1 rounded-lg border-[2px] border-gray-200 p-1">
           <button
@@ -191,7 +191,7 @@ export default function WordleFive({
         )}
         {gameover && (
           <p className="text-semibold mb-2 rounded-md border-[2px] border-red-300 bg-red-100 px-1.5 py-0.5 text-sm text-red-500">
-            You lose!
+            You lose! The word was {guessWord}
           </p>
         )}
         {win && (
